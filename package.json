@@ -1,0 +1,21 @@
+{
+  "name": "kundelik",
+  "productName": "Kundelik",
+  "version": "1.0.0",
+  "description": "Менің күнделігім",
+  "author": "user",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "kz.kundelik.app",
+    "productName": "Kundelik",
+    "files": ["main.js", "index.html"],
+    "directories": { "output": "dist" },
+    "win": { "target": "nsis" },
+    "nsis": { "shortcutName": "Менің күнделігім", "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "mac": { "target": "dmg" }
+  }
+}
